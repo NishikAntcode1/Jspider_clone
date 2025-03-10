@@ -211,13 +211,6 @@ article.tile:first-child p:last-child {
   font-style: italic;
 }
 
-
-
-@media (max-width: 768px) {
-  section.about-section {
-    flex-direction: column;
-  }
-}
 /* ----------------------------------- */
 
 section.statistics-section {
@@ -254,17 +247,12 @@ section.statistics-section .item div {
   line-height: 1.5;
 }
 
-@media (max-width: 768px) {
-  section.about-section, section.statistics-section {
-    flex-direction: column;
-  }
-}
 /* ----------------------------------- */
 
 /* Container for the entire courses section */
 .courses-section {
   background-color: #fff;
-  max-width: 1300px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
 }
@@ -304,7 +292,7 @@ section.statistics-section .item div {
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
-  background-color: #ff9800;
+  background-color: #5a7670;
   font-weight: 700;
   color: #fff;
   cursor: pointer;
@@ -369,37 +357,26 @@ section.statistics-section .item div {
 }
 
 .course footer a {
+  display: flex;
   align-items: center;
-    display: flex;
-    flex-basis: 0;
-    flex-grow: 1;
-    flex-shrink: 0;
-    justify-content: center;
-    padding: .75rem;
-
-    background-color: #5a7670;
-    border-color: transparent;
-    color: #fff;
-
-    font-size: .85rem;
-
-    border-right: 1px solid #ededed;
-
-    border-radius: 2px;
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-shrink: 0;
+  justify-content: center;
+  padding: .75rem;
+  border-right: 1px solid #ededed;
+  border-radius: 2px;
+  background-color: #5a7670;
+  border-color: transparent;
+  color: #fff;
+  font-size: .85rem;
+  font-weight: 600;
+  text-decoration: none;
 }
 
 .course footer a span {
   margin-right: 10px;
 }
 
-/* Responsive design for small screens */
-@media (max-width: 768px) {
-  .courses-heading {
-    grid-template-columns: 1fr;
-  }
-  .courses-heading .course {
-    grid-template-columns: 1fr;
-  }
-}
 
 /* ----------------------------------- */
